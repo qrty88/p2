@@ -15,7 +15,7 @@ st.write(df.head())
 #take user input
 satisfaction_level = st.sidebar.number_input("satisfaction_level:",min_value=df.satisfaction_level.min(), max_value=df.satisfaction_level.max())
 last_evaluation = st.sidebar.number_input("last_evaluation:",min_value=df.last_evaluation.min(), max_value=df.last_evaluation.max())
-number_projects = st.sidebar.number_input("number_projects:",min_value=df.number_projects.min(), max_value=df.number_projects.max()) 
+number_project = st.sidebar.number_input("number_project:",min_value=df.number_projects.min(), max_value=df.number_project.max()) 
 average_montly_hours = st.sidebar.number_input("average_montly_hours:",min_value=df.average_montly_hours.min(), max_value=df.average_montly_hours.max()) 
 time_spent_company =  st.sidebar.number_input("time_spent_company:",min_value=df.time_spent_company.min(), max_value=df.time_spent_company.max()) 
 work_accident =  st.sidebar.number_input("work_accident:",min_value=df.work_accident.min(), max_value=df.work_accident.max()) 
@@ -33,7 +33,7 @@ final_model_encoder=pickle.load(open("encoder", "rb"))
 my_dict = {
     "satisfaction_level": satisfaction_level,
     "last_evaluation": last_evaluation,
-    "number_projects": number_projects,
+    "number_project": number_project,
     "average_montly_hours": average_montly_hours,
     "time_spent_company": time_spent_company,
     "work_accident": work_accident,
