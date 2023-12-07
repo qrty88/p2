@@ -17,7 +17,7 @@ satisfaction_level = st.sidebar.number_input("satisfaction_level:",min_value=df.
 last_evaluation = st.sidebar.number_input("last_evaluation:",min_value=df.last_evaluation.min(), max_value=df.last_evaluation.max())
 number_project = st.sidebar.number_input("number_project:",min_value=df.number_project.min(), max_value=df.number_project.max()) 
 average_montly_hours = st.sidebar.number_input("average_montly_hours:",min_value=df.average_montly_hours.min(), max_value=df.average_montly_hours.max()) 
-time_spent_company =  st.sidebar.number_input("time_spent_company:",min_value=df.time_spent_company.min(), max_value=df.time_spent_company.max()) 
+time_spend_company =  st.sidebar.number_input("time_spend_company:",min_value=df.time_spend_company.min(), max_value=df.time_spend_company.max()) 
 work_accident =  st.sidebar.number_input("work_accident:",min_value=df.work_accident.min(), max_value=df.work_accident.max()) 
 promotion_last_5years = st.sidebar.number_input("promotion_last_5years:",min_value=df.promotion_last_5years.min(), max_value=df.promotion_last_5years.max()) 
 Departments = st.sidebar.number_input("Departments:",min_value=df.Departments.min(), max_value=df.Departments.max()) 
@@ -35,7 +35,7 @@ my_dict = {
     "last_evaluation": last_evaluation,
     "number_project": number_project,
     "average_montly_hours": average_montly_hours,
-    "time_spent_company": time_spent_company,
+    "time_spend_company": time_spend_company,
     "work_accident": work_accident,
     "promotion_last_5years": promotion_last_5years,
     "Departments": Departments,
