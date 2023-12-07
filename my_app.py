@@ -21,7 +21,7 @@ time_spend_company =  st.sidebar.number_input("time_spend_company:",min_value=df
 Work_accident=  st.sidebar.number_input("Work_accident:",min_value=df.Work_accident.min(), max_value=df.Work_accident.max()) 
 promotion_last_5years = st.sidebar.number_input("promotion_last_5years:",min_value=df.promotion_last_5years.min(), max_value=df.promotion_last_5years.max()) 
 #Departments = st.sidebar.number_input("Departments:",min_value=df.Departments .min(), max_value=df.Departments .max()) 
-Salary = st.sidebar.number_input("Salary:",min_value=df.Salary.min(), max_value=df.Salary.max()) 
+#Salary = st.sidebar.number_input("Salary:",min_value=df.Salary.min(), max_value=df.Salary.max()) 
 
 
 # To load machine learning model
@@ -39,7 +39,7 @@ my_dict = {
     "Work_accident": Work_accident,
     "promotion_last_5years": promotion_last_5years,
     #"Departments": Departments,
-    "Salary": Salary
+    #"Salary": Salary
 }
 
 df = pd.DataFrame.from_dict([my_dict])
