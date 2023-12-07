@@ -24,10 +24,6 @@ promotion_last_5years = st.sidebar.number_input("promotion_last_5years:",min_val
 #Salary = st.sidebar.number_input("Salary:",min_value=df.Salary.min(), max_value=df.Salary.max()) 
 
 
-# To load machine learning model
-final_model=pickle.load(open("xgb.pkl", "rb"))
-final_model_encoder=pickle.load(open("encoder", "rb"))
-
 
 # Create a dataframe using feature inputs
 my_dict = {
@@ -46,6 +42,11 @@ df = pd.DataFrame.from_dict([my_dict])
 
 st.header(" The features of employee is below:")
 st.table(df)
+
+# To load machine learning model
+filename = 'xgb.pkl'
+final_model=pickle.load(open(filename, 'rb'))
+final_model_encoder=pickle.load(open("encoder", "rb"))
 
 df2 = final_model_encoder.transform(df)
 
