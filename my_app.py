@@ -20,7 +20,7 @@ average_montly_hours = st.sidebar.number_input("average_montly_hours:",min_value
 time_spend_company =  st.sidebar.number_input("time_spend_company:",min_value=df.time_spend_company.min(), max_value=df.time_spend_company.max()) 
 Work_accident=  st.sidebar.number_input("Work_accident:",min_value=df.Work_accident.min(), max_value=df.Work_accident.max()) 
 promotion_last_5years = st.sidebar.number_input("promotion_last_5years:",min_value=df.promotion_last_5years.min(), max_value=df.promotion_last_5years.max()) 
-Departments = st.sidebar.number_input("Departments:",min_value=df.Departments.min(), max_value=df.Departments.max()) 
+Departments= st.sidebar.number_input("Departments:",min_value=df.Departments.min(), max_value=df.Departments.max()) 
 Salary = st.sidebar.number_input("Salary:",min_value=df.Salary.min(), max_value=df.Salary.max()) 
 
 
