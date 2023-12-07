@@ -44,8 +44,7 @@ st.header(" The features of employee is below:")
 st.table(df)
 
 # To load machine learning model
-filename = 'xgb.pkl'
-final_model=pickle.load(open(filename, 'rb'))
+final_model=pickle.load(open('xgb', 'rb'))
 final_model_encoder=pickle.load(open("encoder", "rb"))
 
 df2 = final_model_encoder.transform(df)
